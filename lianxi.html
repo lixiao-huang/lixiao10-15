@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lianxi.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/template-web.js"></script>
+</head>
+
+<body>
+    <button class="add">新增用户哦</button>
+    <button class="delAll">批量删除</button>
+    <div class="cloud">
+        <!-- <div class="small">
+            <div class="line"></div>
+            <span>小红</span>
+        </div> -->
+    </div>
+    <div class="mask">
+        <div class="login">
+            <div class="title">
+                <span>保存</span>
+                <span>我是默认的标题</span>
+                <span>新增</span>
+            </div>
+            <div class="form">
+                <div class="user">
+                    <span>用户名：</span>
+                    <input type="text">
+                </div>
+                <div class="psw">
+                    <span>密码：</span>
+                    <input type="password">
+                </div>
+                <div class="address">
+                    <span>地址：</span>
+                    <select>
+                        <option selected>不选择</option>
+                        <option>北京</option>
+                        <option>上海</option>
+                    </select>
+                    <select>
+                        <option selected>不选择</option>
+                        <option>北京</option>
+                        <option>上海</option>
+                    </select>
+                    <select>
+                        <option selected>不选择</option>
+                        <option>北京</option>
+                        <option>上海</option>
+                    </select>
+                </div>
+                <div><button class="del">删除</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="edit">
+        <div class="login">
+            <div class="title">
+                <span>保存</span>
+                <span>我是默认的标题</span>
+                <span>编辑</span>
+            </div>
+            <div class="form">
+                <div class="user">
+                    <span>用户名：</span>
+                    <input type="text">
+                </div>
+                <div class="psw">
+                    <span>密码：</span>
+                    <input type="password">
+                </div>
+                <div class="address">
+                    <span>地址：</span>
+                    <select>
+                        <option selected>不选择</option>
+                        <option>北京</option>
+                        <option>上海</option>
+                    </select>
+                    <select>
+                        <option selected>不选择</option>
+                        <option>北京</option>
+                        <option>上海</option>
+                    </select>
+                    <select>
+                        <option selected>不选择</option>
+                        <option>北京</option>
+                        <option>上海</option>
+                    </select>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script type="text/html" id="cloud_mode">
+        {{each data}}
+        <div class="small">
+            <div class="line"></div>
+            <span>{{$value.name}}</span>
+        </div>
+        {{/each}}
+    </script>
+    <script src="js/lianxi.js"></script>
+    
+</body>
+
+</html>

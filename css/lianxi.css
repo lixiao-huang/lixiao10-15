@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.add {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+.delAll {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  left: 40px;
+  top: 90px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+
+.cloud {
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  width: 981px;
+  height: 671px;
+  background: url(../../cloud.jpg), no-repeat;
+}
+.cloud .small {
+  position: absolute;
+}
+.cloud .small .line {
+  width: 2px;
+  height: 30px;
+  margin: 0 auto;
+  background-color: lightblue;
+}
+.cloud .small span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  color: #fff;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 50px;
+}
+.mask,
+.edit {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.mask .login,
+.edit .login {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  overflow: auto;
+}
+.mask .login .title,
+.edit .login .title {
+  display: flex;
+  height: 40px;
+  padding: 0 5px;
+  justify-content: space-between;
+  background-color: lightblue;
+  color: #fff;
+  line-height: 40px;
+}
+.mask .login .form,
+.edit .login .form {
+  width: 90%;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.mask .login .form .user,
+.edit .login .form .user,
+.mask .login .form .psw,
+.edit .login .form .psw {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 15px;
+}
+.mask .login .form .user input,
+.edit .login .form .user input,
+.mask .login .form .psw input,
+.edit .login .form .psw input {
+  width: 80%;
+  height: 35px;
+}
+.mask .login .form .address,
+.edit .login .form .address {
+  margin-top: 20px;
+}
+.mask .login .form .address select,
+.edit .login .form .address select {
+  width: 70px;
+  height: 30px;
+  margin-left: 35px;
+}
+.mask .login .form .del,
+.edit .login .form .del {
+  display: block;
+  width: 100px;
+  height: 30px;
+  background-color: lightblue;
+  color: #fff;
+  margin: 10px auto 0;
+  border: none;
+  border-radius: 5px;
+}
